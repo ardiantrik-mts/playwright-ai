@@ -17,5 +17,5 @@ HTML report with `npm run report` after a run.
 
 The login test reads credentials from `BASEAPP_LOGIN_EMAIL` and
 `BASEAPP_LOGIN_PASSWORD`. Set both environment variables before running
-`npx playwright test tests/login.spec.ts`; the authenticated test is skipped
-when either variable is missing.
+`npx playwright test tests/e2e/login.spec.ts`; the authenticated test is
+skipped when either variable is missing.
