@@ -16,6 +16,8 @@ HTML report with `npm run report` after a run.
 ## BaseApp login test
 
 The login test reads credentials from `BASEAPP_LOGIN_EMAIL` and
-`BASEAPP_LOGIN_PASSWORD`. Set both environment variables before running
-`npx playwright test tests/e2e/login.spec.ts`; the authenticated test is
-skipped when either variable is missing.
+`BASEAPP_LOGIN_PASSWORD`. To run it locally, copy `.env.example` to `.env` and
+fill in your credentials, then run
+`npx playwright test tests/e2e/login.spec.ts`. `.env` is ignored by Git, so
+credentials stay local; do not put real credentials in source files. The
+authenticated test is skipped when either value is missing.
